@@ -1,0 +1,36 @@
+:root {
+    --bs-primary-rgb: 19, 38, 52;
+    --bs-secondary-rgb: 255, 255, 255;
+    --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-nav-link-font-size: 1em;
+}
+
+.af-navbar-toggler {
+    background-color: rgba(255, 143, 143, 0.15);
+}
+
+.af-gradient-container {
+    background: rgb(230,223,207);
+    background: linear-gradient(180deg, #61C0A8 0%, #F5D332 70%); 
+}
+
+.af-secondary-container {
+    border-top: solid #61C0A8 0.33em;
+}
+
+.af-text-shadow-white {
+    text-shadow: 0 0 5em rgba(255, 255, 255, 0.25)
+}
+
+.af-footer {
+    border-top: solid #F5D332 0.33em;
+    background-color: #61C0A8;
+}
+
+.af-footer-image {
+    width: min(75%, 40em);
+}
+
+.af-footer a {
+    color: white;
+}

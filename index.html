@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Aurora.vote</title>
+
+  <meta name="description" content="Learn more about voting in Aurora, Illinois. The 2025 Consolidated Election is quickly approaching!">
+  <meta name="robots" content="all">
+  <link rel="canonical" href="https://www.aurora.vote">
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <meta name="googlebot" content="index,follow">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+    onerror="this.onerror=null;this.href='bootstrap-5.3.3-dist/css/bootstrap.min.css';this.removeAttribute('integrity');this.removeAttribute('crossorigin');">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg sticky-top bg-white py-3">
+    <div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+      <a class="navbar-brand" href="#">
+        <img src="images/header.gif" style="transition: all .1s linear; height: 8em;" id="header-image" alt="AURORA CAN/WILL/DOES VOTE">
+      </a>
+      <button class="af-navbar-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Voter Turnout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Candidates</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="af-gradient-container pt-5">
+    <div class="container col-xxl-8 px-4">
+      <div class="row flex-lg align-items-center g-5 pt-5">
+        <div class="col-lg-6 text-light af-text-shadow-white">
+          <p class="fs-5">
+            Please excuse the dust, this website is under construction.
+          </p>
+          <p class="fs-5">
+            <strong>My vision for Aurora.vote:</strong>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              A source for information about elected officials - their district,
+              their legislative history, and other difficult to find information
+            </li>
+            <li class="list-group-item">
+              A place for candidates to provide information about themselves, centralizing
+              information for voters and allowing candidates to avoid costly website development
+            </li>
+            <li class="list-group-item">
+              A cross-municipality non-partisan non-profit that increases voter participation
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-secondary af-secondary-container">
+    <div id="iframe-wrapper"
+      style="position: relative; padding-top: 25px; padding-bottom: 100px; height: 0; margin: 10;">
+      <iframe id="iframe"
+        src="https://www.arcgis.com/apps/instant/sidebar/index.html?appid=3cc19598df804ef09913de9c4147bb78"
+        frameborder="0" style="top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen>
+        <a class="btn btn-success" href="https://www.arcgis.com/apps/instant/sidebar/index.html?appid=3cc19598df804ef09913de9c4147bb78" role="button">View the 2025 Aurora Election Districts</a>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="mt-auto">
+    <footer class="af-footer">
+      <div class="container py-4">
+        <div class="row text-center text-secondary">
+          <p class="mb-0">Site <a href="https://fitzcorbett.com" target="_blank">Created</a> and Paid for by Austin
+            FitzCorbett; © Copyright 2024</p>
+        </div>
+        <div class="row text-center text-secondary">
+          <p class="mb-0">Austin FitzCorbett is a candidate for West Aurora School Board. This website is not in any way
+            influenced towards or against any candidates.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // header resizing on scroll
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("header-image").style.height = "2em";
+      } else {
+        document.getElementById("header-image").style.height = "8em";
+      }
+    }
+
+    // iframe responsiveness
+    let iframeWrapper = document.getElementById("iframe-wrapper");
+    let w;
+    let h;
+    let bodyWidth;
+    let bodyHeight;
+    // get window size and resize the iframe
+    function resizeIframeWrapper() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+
+      iframeWrapper.style["width"] = `99%`;
+      iframeWrapper.style["height"] = `${h}px`;
+    }
+    window.onload = resizeIframeWrapper;
+    window.onresize = resizeIframeWrapper;
+  </script>
+</body>
+
+</html>
