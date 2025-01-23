@@ -11,11 +11,11 @@
 
 .af-gradient-container {
     background: rgb(230,223,207);
-    background: linear-gradient(180deg, #61C0A8 0%, #F5D332 70%); 
+    background: linear-gradient(180deg, #00B4F6 0%, #F5D332 70%); 
 }
 
 .af-secondary-container {
-    border-top: solid #61C0A8 0.33em;
+    border-top: solid #00B4F6 0.33em;
 }
 
 .af-text-shadow-white {
@@ -24,7 +24,7 @@
 
 .af-footer {
     border-top: solid #F5D332 0.33em;
-    background-color: #61C0A8;
+    background-color: #00B4F6;
 }
 
 .af-footer-image {
