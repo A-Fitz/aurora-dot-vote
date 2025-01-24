@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aurora.vote - 2025 Referenda</title>
+
+    <meta name="description"
+        content="Learn more about voting in Aurora, Illinois. The 2025 Consolidated Election is quickly approaching!">
+    <meta name="robots" content="all">
+    <link rel="canonical" href="https://www.aurora.vote">
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <meta name="googlebot" content="index,follow">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+        onerror="this.onerror=null;this.href='bootstrap-5.3.3-dist/css/bootstrap.min.css';this.removeAttribute('integrity');this.removeAttribute('crossorigin');">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module"
+        src="https://js.arcgis.com/embeddable-components/4.31/arcgis-embeddable-components.esm.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top py-3" style="background-color: #00B4F6;">
+        <div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/header.gif" style="transition: all .1s linear; height: 2em;" id="header-image"
+                    alt="AURORA CAN/WILL/DOES VOTE">
+            </a>
+            <button class="af-navbar-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2025-consolidated-maps.html">Elected Office Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2025-past-voter-turnout.html">Voter Turnout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2025-consolidated-candidates.html">The Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">The Referenda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kane County -->
+    <div class="af-secondary-container" style="background-color: #F5D332">
+        <div class="container my-3 p-3" style="background-color: white; border-radius: 1em;">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 mb-5">
+                    <h1>Kane County</h1>
+                    <arcgis-embedded-map style="width:100%;" item-id="286418a22b45490fb2ec33cb4c4d454c" theme="light"
+                        portal-url="https://www.arcgis.com" legend-enabled share-enabled></arcgis-embedded-map>
+                </div>
+                <div class="mt-3">
+                    <h2>Referendum #1</h2>
+                    <p>
+                        To pay for public safety purposes, shall the County of Kane be authorized to impose an increase on its share of local sales taxes by 0.75%?
+                        <br>
+                        This would mean that a consumer would pay an additional $0.75 in sales tax for every $100 of tangible personal property bought at retail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kaneland Community Unit School District 302 -->
+    <div class="af-secondary-container" style="background-color: #00B4F6">
+        <div class="container my-3 p-3" style="background-color: white; border-radius: 1em;">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 mb-5">
+                    <h1>Kaneland Community Unit School District 302</h1>
+                    <arcgis-embedded-map style="width:100%;" item-id="ba4bd801165d4754b798b7a620ae2b60" theme="light"
+                        portal-url="https://www.arcgis.com" legend-enabled share-enabled></arcgis-embedded-map>
+                </div>
+                <div class="mt-3">
+                    <h2>Referendum #1</h2>
+                    <p>
+                        Shall the Board of Education of Kaneland Community Unit School District Number 302, Kane and DeKalb Counties, Illinois, alter, repair and equip school buildings and improve the sites thereof, including but not limited to repairing and replacing infrastructure and mechanical systems; replacing roofs and updating playgrounds at the elementary school buildings; improving learning spaces, restrooms, the main entrance and athletic facilities at the Kaneland High School Building and building and equipping a field house addition thereto; build and equip maintenance and transportation facilities; and issue its bonds to the amount of $140,274,000 for the purpose of paying the costs thereof?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-auto">
+        <footer class="af-footer">
+            <div class="container py-4">
+                <div class="row text-center text-secondary">
+                    <p class="mb-0">Site <a href="https://fitzcorbett.com" target="_blank">Created</a> and Paid for by
+                        Austin FitzCorbett; © Copyright 2024</p>
+                </div>
+                <div class="row text-center text-secondary">
+                    <p class="mb-0">Austin FitzCorbett is a candidate for West Aurora School Board. This website is not
+                        in any way
+                        biased towards any candidates or elected officials. This website is not maintained by any public
+                        body. Please reference
+                        your local county website for official election information.
+                    </p>
+                    <p>Email me at <a href="mailto:austin@fitzcorbett.com">austin@fitzcorbett.com</a> if you want to
+                        give me a suggestion or make a correction.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
