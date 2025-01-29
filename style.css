@@ -34,3 +34,8 @@
 .af-footer a {
     color: white;
 }
+
+.af-candidate-name {
+    font-weight: bold;
+    text-decoration: underline;
+}
